@@ -8,16 +8,16 @@ vless + vmess + trojan + shadowsocks2022
 
 - 地址：**x.x.x.x**（由服务平台提供）
 - 端口：**443**（通常自带TLS）
-- 用户ID/密码：**1eb6e917774b4a84aff6b058577c60a5**（默认）
+- 用户ID/密码：**4872da1fdbc949bf8f64ff7a6e2adb28**（默认）
 - 传输协议：**ws**
 - 传输层安全：**tls**
 - 加密
   - shadowsocks：**2022-blake3-aes-128-gcm**
 - 路径（默认）
-  - vless：**/vless/1eb6e917774b4a84aff6b058577c60a5**
-  - vmess：**/vmess/1eb6e917774b4a84aff6b058577c60a5**
-  - trojan：**/trojan/1eb6e917774b4a84aff6b058577c60a5**
-  - shadowsocks：**/shadowsocks/1eb6e917774b4a84aff6b058577c60a5**
+  - vless：**/vless/4872da1fdbc949bf8f64ff7a6e2adb28**
+  - vmess：**/vmess/4872da1fdbc949bf8f64ff7a6e2adb28**
+  - trojan：**/trojan/4872da1fdbc949bf8f64ff7a6e2adb28**
+  - shadowsocks：**/shadowsocks/4872da1fdbc949bf8f64ff7a6e2adb28**
 
 > 其他参数默认
 
@@ -30,7 +30,7 @@ vless + vmess + trojan + shadowsocks2022
 | 变量名           | 默认值                           | 描述            |
 | ---------------- | -------------------------------- | --------------- |
 | PORT             | 8080                             | 端口            |
-| UUID             | 1eb6e917774b4a84aff6b058577c60a5 | 用户ID/密码     |
+| UUID             | 4872da1fdbc949bf8f64ff7a6e2adb28 | 用户ID/密码     |
 | PATH_vless       | /vless/$UUID                     | vless路径       |
 | PATH_vmess       | /vmess/$UUID                     | vmess路径       |
 | PATH_trojan      | /trojan/$UUID                    | trojan路径      |
@@ -38,9 +38,9 @@ vless + vmess + trojan + shadowsocks2022
 
 为兼容**shadowsocks2022**，生成的UUID需去除所有`-`
 
-> 例：*1eb6e917-774b-4a84-aff6-b058577c60a5* => *1eb6e917774b4a84aff6b058577c60a5*
+> 例：*4872da1f-dbc9-49bf-8f64-ff7a6e2adb28* => *4872da1fdbc949bf8f64ff7a6e2adb28*
 > 
-> 虽然配置的*UUID*里去除了`-`，但是<u>**vmess/vless**</u>可以使用带`-`的<u>1eb6e917-774b-4a84-aff6-b058577c60a5</u>作为*用户ID*（针对SagerNet连不上的情况）
+> 虽然配置的*UUID*里去除了`-`，但是<u>**vmess/vless**</u>可以使用带`-`的<u>4872da1f-dbc9-49bf-8f64-ff7a6e2adb28</u>作为*用户ID*（针对SagerNet连不上的情况）
 
 默认路径：**/协议名称/设置的UUID**
 
